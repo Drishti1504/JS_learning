@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button class="my_button">Click Me</button>
+  <div class="my_div">This is the div</div>
+
+  <script>
+    console.log(document.querySelector('.my_button').classList);
+    console.log(document.querySelector('.my_button').classList.add('your_button'));
+    console.log(document.querySelector('.my_button').classList.remove('your_button'));
+    
+    console.log(document.location);
+    console.log(document.title);
+    console.log(document.domain);
+
+    //a = 5;
+
+    let button = document.createElement('Button');
+    button.innerText = 'Click Me';
+    document.querySelector('.my_div').appendChild(button);
+    //document.querySelector('.my_div').removeChild(button); //  ----> this removes the button created in line 25.
+
+  </script>
+</body>
+</html>

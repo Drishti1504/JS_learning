@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Objects</title>
+</head>
+<body>
+  
+
+  <script>
+    /* let product = {
+      company : 'Mango',
+      price : 861 ,
+      item_name : 'T-shirt',
+      discount : 50 ,
+    }; */
+
+    //console.log(typeof (product));
+    /* console.log(product);
+    console.log(product.company);   // dot notation   */
+    //console.log(product['company']);   ----> bracket notation
+    /* product.company = 'Grapes';
+    console.log(`after changing the value:-`);
+    console.log(product); 
+
+    console.log(`Now`);
+    delete product.discount;
+    //delete product['discount'];
+    console.log(product); */
+
+    /* let product = {
+      company : 'Mango',
+      price : 865 ,
+      item_name : 'T-shirt',
+      discount : 50 ,
+      display_price : function() {
+        //return `Price of the product is ₹${product.price}`
+        return `Price of the product is ₹${this.price}`
+      }
+    };
+
+    console.log(product.display_price()); */
+
+    /* console.log('I love playing badminton'.toUpperCase());
+    console.log(('I love playing badminton'.replace('badminton','basketball')).toUpperCase()); */
+
+
+
+
+
+    /* let a = 5;
+    let b = a;
+    console.log(`Checking for primitives`);
+    console.log(`a=${a} and b=${b}`);
+    a = 8;
+    console.log(`a=${a} and b=${b}`);
+
+    console.log(`Now, Checking for objects`);
+    a = {num : 5,};
+    b = a;
+    console.log(`a=${a.num} and b=${b.num}`);
+    a.num = 8;
+    console.log(`a=${a.num} and b=${b.num}`); */
+
+
+
+
+
+
+    
+    /* let product = {
+      company : 'Mango',
+      price : 861 ,
+      item_name : 'T-shirt',
+      discount : 50 ,
+    };  */
+
+    // object de-structuring
+    /* let company = product.company;
+    console.log(company); */
+    // or
+    /* let {company, price} = product;
+    console.log(company);
+    console.log(price); */
+    // -----------------------------------------------------------
+
+    // not recommended to use property shorthand 
+    /* let price = 867;
+    let product = {
+      company : 'Mango',
+      item_name : 'T-shirt',
+      discount : 50 ,
+      //price : price,
+      price,
+    };
+    console.log(product); */ 
+
+    // --------------------------------------------------------------
+
+
+
+    // method shorthand -> is your choice that if u want to use
+    /* let product = {
+      company : 'Mango',
+      price : 864,
+      item_name : 'T-shirt',
+      discount : 50 ,
+      display_price : function() {
+        return `Price of the product is ₹${product.price}`;
+      }
+    }; 
+    console.log(product.display_price()); */
+    // or
+    let product = {
+      company : 'Mango',
+      price : 869,
+      item_name : 'T-shirt',
+      discount : 50 ,
+      display_price() {
+        return `Price of the product is ₹${product.price}`;
+      }
+    };
+    console.log(product.display_price());
+
+    // conclusion - de-structuring is used much than other two shorthand properties!
+
+
+
+  </script>
+</body>
+</html>

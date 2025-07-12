@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practice Exercise</title>
+</head>
+<body>
+  
+
+  <script>
+    /* let product = {
+      size : 'S',
+      name : 'Jeans',
+      fit : 'Slim Fit',
+      'delivery-time' : 'Same day delivery',
+    }; */
+    /* let copy_product = product;
+    console.log(product);
+    copy_product.size = 'M';
+    console.log(product);
+    copy_product.fit = 'Regular';
+    console.log(product); */
+
+
+    //console.log(product['delivery-time']);
+
+
+
+
+    /* let obj = {
+      message : 'Good Job',
+      status : 'complete',
+    };
+
+    console.log(obj);
+    let {message, status} = obj;
+    console.log(message);
+    console.log(status); */
+
+
+
+
+
+    function isIdenticalProduct (product1, product2) {
+      if(typeof product1 !== 'object' || typeof product2 !== 'object') {
+        console.warn('Parameter passed was not an object');
+        return false;
+      }
+
+      if (product1 === product2) {
+        return true;
+      }
+
+      if (product1.name === product2.name && product1.size === product2.size && product1.fit === product2.fit) {
+        return true;
+      } else {
+        return false;
+      }
+    }
+
+    let product1 = {
+      size : 'S',
+      name : 'Jeans',
+      fit : 'Slim Fit',
+      'delivery-time' : 'Same day delivery',
+    };
+
+    let product2 = {
+      size : 'M',
+      name : 'Jeans',
+      fit : 'Slim Fit',
+      'delivery-time' : 'Same day delivery',
+    };
+
+    let product3 = {
+      size : 'M',
+      name : 'Jeans',
+      fit : 'Slim Fit',
+      'delivery-time' : 'Same day delivery',
+    };
+
+    console.log(isIdenticalProduct(product1, ''));
+    console.log(isIdenticalProduct(product1, product1));
+    console.log(isIdenticalProduct(product1, product2));
+    console.log(isIdenticalProduct(product3, product2));
+    console.log(isIdenticalProduct(product2, product3));
+
+    
+  </script>
+</body>
+</html>
